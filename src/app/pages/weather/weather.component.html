@@ -1,0 +1,15 @@
+<div class="weather">
+  <p class="weather-title">{{title}}</p>
+  <div class="weather-options">
+    <ul class="weather-options__list">
+      @for (option of weatherOptions; track option.key) {
+      <li class="weather-options__item">
+        <a (click)="navigateToWeatherDetails(option)">
+          {{option.location}} ({{option.key}})
+        </a>
+      </li>
+
+      }
+    </ul>
+  </div>
+</div>

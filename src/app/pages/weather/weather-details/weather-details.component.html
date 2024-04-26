@@ -1,0 +1,20 @@
+
+@if(isLoading) {
+  <p class="detail-loading">
+    Loading ..
+  </p>
+}
+@else {
+  <div class="details">
+    <button class="back" (click)="navigateBack()" type="button">
+      Back
+    </button>
+    <wa-line-chart
+    [temperatures]="temperatures"
+    [labels]="labels"
+    [identifier]="identifier"
+    ></wa-line-chart>
+  </div>
+
+}
+

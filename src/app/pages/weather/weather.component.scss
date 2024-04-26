@@ -1,0 +1,25 @@
+.weather {
+  .weather-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #1155CC;
+    text-decoration: underline;
+  }
+  .weather-options__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .weather-options__item {
+    list-style-type: circle;
+    font-size: 1.3rem;
+    cursor: pointer;
+    a:hover {
+      color: orange;
+    }
+
+  }
+}
